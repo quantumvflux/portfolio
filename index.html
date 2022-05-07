@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marcos Baravalle</title>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Playfair display -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- styles -->
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div class="header-container">
+        <button id="hamburger-btn">☰</button>
+        <header>
+          <nav class="nav-container">
+            <button id="close-btn">✖</button>
+            <ul>
+              <li>
+                <a id="nav-item" href="#">Home</a>
+              </li>
+              <li>
+                <a id="nav-item-1" href="#">About Me</a>
+              </li>
+              <li>
+                <a id="nav-item-2" href="#">My Abilities</a>
+              </li>
+              <li>
+                <a id="nav-item-3" href="#">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+      </div>
+      <main id="hero" class="hero">
+        <div class="titles-container">
+          <div class="hero-overlay"></div>
+          <div class="hero-text">
+            <div class="titles">
+              <p>I'm</p>
+              <h1>Marcos Baravalle</h1>
+            </div>
+            <div id="container">
+              <div id="text"></div>
+              <div id="cursor"></div>
+            </div>
+          </div>
+        </div>
+        <div class="down-arrow"></div>
+      </main>
+      <section class="me">
+        <!-- <h2>Who am I?</h2> -->
+      </section>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
