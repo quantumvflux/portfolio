@@ -31,21 +31,6 @@ navLink3.addEventListener("click", () =>
   navContainer.classList.toggle("active")
 );
 
-// let i = 0;
-// let txt = "Marcos Baravalle"; /* The text */
-
-// let speed = 50; /* The speed/duration of the effect in milliseconds */
-
-// function typeWriter() {
-//   if (i < txt.length) {
-//     document.getElementById("demo").innerHTML += txt.charAt(i);
-//     i++;
-//     setTimeout(typeWriter, speed);
-//   }
-// }
-
-// typeWriter();
-
 // List of sentences
 var _CONTENT = ["Front end web developer", "Economist", "Musician"];
 
