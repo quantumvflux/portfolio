@@ -7,8 +7,8 @@ const navContainer = document.querySelector(".nav-container");
 
 const navLink = document.querySelector("#nav-item");
 const navLink1 = document.querySelector("#nav-item-1");
-const navLink2 = document.querySelector("#nav-item-2");
 const navLink3 = document.querySelector("#nav-item-3");
+const navLink4 = document.querySelector("#nav-item-4");
 
 openBtn.addEventListener("click", () =>
   navContainer.classList.toggle("active")
@@ -23,11 +23,12 @@ navLink.addEventListener("click", () =>
 navLink1.addEventListener("click", () =>
   navContainer.classList.toggle("active")
 );
-navLink2.addEventListener("click", () =>
+
+navLink3.addEventListener("click", () =>
   navContainer.classList.toggle("active")
 );
 
-navLink3.addEventListener("click", () =>
+navLink4.addEventListener("click", () =>
   navContainer.classList.toggle("active")
 );
 
@@ -95,3 +96,23 @@ function Delete() {
 
 // Start the typing effect on load
 _INTERVAL_VAL = setInterval(Type, 100);
+
+// CONTACT FORM
+
+const form = document.getElementById("form");
+
+const sendEmail = (e) => {
+  e.preventDefault();
+  const contactName = document.querySelector("#name");
+  const email = document.querySelector("#email");
+  const msg = document.querySelector("#msg");
+  Email.send({
+    SecureToken: "dcfdf88a-6a82-4191-9aa2-5742b6f5ef2e",
+    To: "marcosabaravalle@gmail.com",
+    From: email.value,
+    Subject: `Nuevo mensaje de ${contactName.value}, desde portfolio`,
+    Body: msg.value,
+  }).then((message) => alert("Thank you!"));
+};
+
+form.addEventListener("submit", sendEmail);
