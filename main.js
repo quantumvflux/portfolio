@@ -28,10 +28,13 @@ navLink3.addEventListener("click", () =>
   navContainer.classList.toggle("active")
 );
 
+<<<<<<< HEAD
 navLink4.addEventListener("click", () =>
   navContainer.classList.toggle("active")
 );
 
+=======
+>>>>>>> e0b2a0fae324ae0ba27e07d3c9b8a66dc9e84ff0
 // List of sentences
 var _CONTENT = ["Front end web developer", "Economist", "Musician"];
 
