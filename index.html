@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/portfolio/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mrk@root >_</title>
+    <script>
+      const timing = 300,
+        lastChar = document.title.slice(-1),
+        webTitle = document.title.slice(0, -1),
+        blinkChar = (e, t) => {
+          document.title.endsWith(e)
+            ? (document.title = t + " ")
+            : (document.title = t + e);
+        };
+      setInterval(blinkChar, timing, lastChar, webTitle);
+    </script>
+    <script type="module" crossorigin src="/portfolio/assets/index.af00610a.js"></script>
+    <link rel="stylesheet" href="/portfolio/assets/index.2a7a4fd0.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    
+  </body>
+</html>
