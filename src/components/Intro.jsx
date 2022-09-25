@@ -1,30 +1,29 @@
 import { useEffect, useState } from "react";
-import TypeWriterEffect from "react-typewriter-effect";
-import { CommandLine } from "../components/CommandLine";
-import { Navbar } from "./Navbar";
+import { CommandLine } from "../components/CommandLine.jsx";
+import { Navbar } from "./Navbar.jsx";
+import Typewriter from "typewriter-effect";
+
 export const Intro = () => {
   const [showComponent, setShowComponent] = useState(false);
   useEffect(() => {
     setTimeout(() => {
       setShowComponent(!false);
-    }, 750);
+    }, 500);
   }, []);
   return (
     <div className="app-intro">
       <Navbar />
       <span className="host">
         mrk@root &gt;
-        <TypeWriterEffect
-          className=""
-          textStyle={{
-            fontFamily: "jetbrains-mono",
-            fontSize: "12px",
-            fontWeight: "400",
+        <Typewriter
+          options={{
+            autoStart: true,
+            cursor: "",
+            delay: 1,
           }}
-          startDelay={25}
-          cursorColor="white"
-          text="mrk.sh"
-          typeSpeed={25}
+          onInit={(typewriter) => {
+            typewriter.typeString("mrk.sh").start();
+          }}
         />
       </span>
       {showComponent && (

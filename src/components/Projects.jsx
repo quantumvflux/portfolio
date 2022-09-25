@@ -1,33 +1,32 @@
-import TypeWriterEffect from "react-typewriter-effect";
-import { Navbar } from "./Navbar";
-import { CommandLine } from "./CommandLine";
 import { useState, useEffect } from "react";
+import { Navbar } from "./Navbar.jsx";
+import { CommandLine } from "./CommandLine.jsx";
+import Typewriter from "typewriter-effect";
 
 export const Projects = () => {
   const [showComponent, setShowComponent] = useState(false);
   useEffect(() => {
     setTimeout(() => {
       setShowComponent(!false);
-    }, 600);
+    }, 1000);
   }, []);
   return (
     <div>
       <Navbar />
       <span className="host">
         mrk@root &gt;
-        <TypeWriterEffect
-          className=""
-          textStyle={{
-            fontFamily: "jetbrains-mono",
-            fontSize: "12px",
-            fontWeight: "400",
+        <Typewriter
+          options={{
+            autoStart: true,
+            cursor: "",
+            delay: 1,
           }}
-          startDelay={25}
-          cursorColor="white"
-          text="mrk --projects"
-          typeSpeed={25}
+          onInit={(typewriter) => {
+            typewriter.typeString("mrk --projects").start();
+          }}
         />
       </span>
+
       {showComponent && (
         <div>
           <p>here are some projects i have worked on:</p>

@@ -1,9 +1,5 @@
 import { Link } from "react-router-dom";
 export const Navbar = () => {
-  const handleNavBar = (e) => {
-    e.preventDefault();
-  };
-
   return (
     <div className="navbar">
       <ul>

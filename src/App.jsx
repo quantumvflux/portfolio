@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
-import { Intro } from "./components/Intro";
-import { Myself } from "./components/Myself";
-import { Projects } from "./components/Projects";
+import { Intro } from "./components/Intro.jsx";
+import { Myself } from "./components/Myself.jsx";
+import { Projects } from "./components/Projects.jsx";
 import "./App.css";
 
 export const App = () => {

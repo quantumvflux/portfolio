@@ -1,7 +1,8 @@
-import TypeWriterEffect from "react-typewriter-effect";
-import { Navbar } from "./Navbar";
-import { CommandLine } from "./CommandLine";
 import { useEffect, useState } from "react";
+import { Navbar } from "./Navbar.jsx";
+import { CommandLine } from "./CommandLine.jsx";
+import Typewriter from "typewriter-effect";
+
 export const Myself = () => {
   const [showComponent, setShowComponent] = useState(false);
   useEffect(() => {
@@ -14,17 +15,15 @@ export const Myself = () => {
       <Navbar />
       <span className="host">
         mrk@root &gt;
-        <TypeWriterEffect
-          className=""
-          textStyle={{
-            fontFamily: "jetbrains-mono",
-            fontSize: "12px",
-            fontWeight: "400",
+        <Typewriter
+          options={{
+            autoStart: true,
+            cursor: "",
+            delay: 1,
           }}
-          startDelay={25}
-          cursorColor="white"
-          text="mrk --myself"
-          typeSpeed={25}
+          onInit={(typewriter) => {
+            typewriter.typeString("mrk --myself").start();
+          }}
         />
       </span>
       {showComponent && (
