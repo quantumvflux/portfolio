@@ -9,7 +9,7 @@ export const App = () => {
     <div className="app-container">
       <Routes>
         <Route
-          path="/"
+          path="portfolio"
           element={
             <div>
               <Intro />

@@ -4,7 +4,7 @@ export const Navbar = () => {
     <div className="navbar">
       <ul>
         <li>
-          <Link to="/" className="nav-element" id="nav-item">
+          <Link to="/portfolio" className="nav-element" id="nav-item">
             welcome
           </Link>
         </li>

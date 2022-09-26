@@ -28,10 +28,9 @@ export const Myself = () => {
       </span>
       {showComponent && (
         <div>
-          <h1></h1>
           <p>
             hello there! <br />
-            my name is Marcos (or mark) and i develop websites as a fromtend web
+            my name is Marcos (or mark) and i develop websites as a frontend web
             developer.
           </p>
           <p>
