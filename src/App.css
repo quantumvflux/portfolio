@@ -131,7 +131,7 @@ p {
 }
 
 .home-links > a:nth-child(2):hover {
-  color: #6cccbe;
+  color: #94ffef;
   transition: 0.3s;
 }
 
@@ -140,7 +140,7 @@ p {
 }
 
 .home-links > a:nth-child(3):hover {
-  color: #4868ad;
+  color: #8fb0f8;
   transition: 0.3s;
 }
 
@@ -149,7 +149,16 @@ p {
 }
 
 .home-links > a:nth-child(4):hover {
-  color: #6feb84;
+  color: #aaffba;
+  transition: 0.3s;
+}
+
+.home-links > a:nth-child(5) {
+  color: #f34747;
+}
+
+.home-links > a:nth-child(5):hover {
+  color: #ffa3a3;
   transition: 0.3s;
 }
 

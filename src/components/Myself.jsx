@@ -64,6 +64,12 @@ export const Myself = () => {
             >
               spotify
             </a>
+            <a
+              href="https://www.youtube.com/channel/UCqnM4rsFOkbr1uZf1rZBm_g"
+              target="_BLANK"
+            >
+              youtube
+            </a>
             <p>other relevant data:</p>
             <ul className="other-data">
               pc:
