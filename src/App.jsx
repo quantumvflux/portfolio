@@ -9,7 +9,7 @@ export const App = () => {
     <div className="app-container">
       <Routes>
         <Route
-          path="portfolio"
+          path="/"
           element={
             <div>
               <Intro />
@@ -17,7 +17,7 @@ export const App = () => {
           }
         />
         <Route
-          path="myself"
+          path="/myself"
           element={
             <div>
               <Myself />
@@ -25,7 +25,7 @@ export const App = () => {
           }
         />
         <Route
-          path="projects"
+          path="/projects"
           element={
             <div>
               <Projects />

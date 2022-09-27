@@ -30,7 +30,7 @@ export const Myself = () => {
         <div>
           <p>
             hello there! <br />
-            my name is Marcos (or mark) and i develop websites as a frontend web
+            my name is Marcos (or mark) and i am an economist and frontend web
             developer.
           </p>
           <p>
