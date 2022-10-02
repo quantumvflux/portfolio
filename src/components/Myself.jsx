@@ -75,14 +75,14 @@ export const Myself = () => {
               pc:
               <li>
                 <ul className="myself-setup">
-                  <li>processor: intel celeron g5905</li>
-                  <li>ram: 8gb</li>
+                  <li>processor: intel core i5 10400</li>
+                  <li>ram: 16gb</li>
                   <li>keyboard: redragon dragonborn with brown switches</li>
                   <li>mouse: logitech g203</li>
                   <li>audio card: behringer u-phoria umc22</li>
                 </ul>
               </li>
-              os:
+              configs:
               <li>
                 <ul className="myself-os">
                   <li>operating system: vanilla arch linux</li>
