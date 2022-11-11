@@ -37,10 +37,7 @@ export const Myself = () => {
             i love programming, videogames, linux, economics and music
             production.
           </p>
-          <p>
-            {" "}
-            im currently learning about react, linux customization and vim.
-          </p>
+          <p> im currently learning react, linux customization and vim.</p>
           <p>here are some of my links: </p>
           <div className="home-links">
             <a href="https://github.com/quantumvflux" target="_BLANK">
@@ -79,6 +76,7 @@ export const Myself = () => {
                   <li>ram: 16gb</li>
                   <li>keyboard: redragon dragonborn with brown switches</li>
                   <li>mouse: logitech g203</li>
+                  <li>headphones: hyperx cloud flight</li>
                   <li>audio card: behringer u-phoria umc22</li>
                 </ul>
               </li>
