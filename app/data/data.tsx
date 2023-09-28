@@ -3,7 +3,7 @@ import vibecommerceImage from "./assets/vibecommerce.webp";
 import nephilimImage from "./assets/nephilim.webp";
 import cryptoinsightImage from "./assets/cryptoinsight.webp";
 import weatherappImage from "./assets/weatherapp.webp";
-import amservicios from "./assets/amservicios.webp";
+import amserviciosImage from "./assets/amservicios.webp";
 
 export interface Project {
   title: string;
@@ -20,13 +20,14 @@ export const job: Job[] = [
     title: "AM Servicios",
     description:
       "Designed and developed a captivating landing page for AM Servicios that perfectly encapsulates the essence of their brand. Additionally, I spearheaded their digital marketing efforts across various social media platforms, including Instagram, Facebook, and LinkedIn. I conceptualized and brought to life a landing page that harmonized with AM Servicios' brand identity. This web presence serves as a virtual gateway to their services, leaving a lasting impression on visitors.",
-    image: amservicios,
+    image: amserviciosImage,
     link: "https://vibecommerce.vercel.app/",
   },
   {
     title: "Nephilim Official Page",
     description:
-      "Explore the electrifying world of Nephilim, your local music sensation. Dive into their music, events, and exclusive content, all in one place. Stay up-to-date with Nephilim's latest music releases, concert dates, and behind-the-scenes insights, all delivered in real-time. Also discover and shop for unique band merchandise through our integrated store. Show your love for Nephilim with the latest gear.",
+      "I collaborated with the local band Nephilim to create a dynamic web presence that not only showcased their music but also included an e-commerce solution for their merchandise offerings. I was entrusted with the task of designing and developing a captivating website that would effectively represent Nephilim's unique musical identity. The website I crafted seamlessly integrated their branding, music, and a range of interactive elements to engage visitors and fans.",
+
     image: nephilimImage,
     link: "https://quantumvflux.github.io/nephilim-official-page/",
   },
@@ -53,7 +54,7 @@ export const data: Project[] = [
   {
     title: "Weather App",
     description:
-      "Explore the world's weather conditions with WeatherWeb, your trusted source for up-to-the-minute forecasts and meteorological insights. Discover accurate weather information from locations around the globe, all at your fingertips. Whether you're planning a local outing or an international adventure, WeatherWeb has you covered.",
+      "Explore the world's weather conditions with Weather App, your trusted source for up-to-the-minute forecasts and meteorological insights. Discover accurate weather information from locations around the globe, all at your fingertips. Whether you're planning a local outing or an international adventure, Weather App has you covered.",
     image: weatherappImage,
     link: "https://quantumvflux.github.io/react-weather-app/",
     githubLink: "https://github.com/quantumvflux/react-weather-app",
