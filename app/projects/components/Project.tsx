@@ -1,8 +1,15 @@
 import Image, { StaticImageData } from "next/image";
 import LinksSection from "./LinksSection";
-import { Project } from "@/app/data/data";
 
-const Project = ({ image, title, description, link, githubLink }: Project) => {
+interface Props {
+  image: StaticImageData;
+  title: string;
+  description: string;
+  link: string;
+  githubLink?: string;
+}
+
+const Project = ({ image, title, description, link, githubLink }: Props) => {
   return (
     <div className="mb-4">
       <h3 className="font-medium">&gt; {title}</h3>
