@@ -10,7 +10,7 @@ export interface Project {
   description: string;
   image: StaticImageData;
   link: string;
-  githubLink: string;
+  githubLink?: string;
 }
 
 export interface Job extends Omit<Project, "githubLink"> {}
@@ -21,7 +21,7 @@ export const jobs: Job[] = [
     description:
       "Designed and developed a captivating landing page for AM Servicios that perfectly encapsulates the essence of their brand. Additionally, I spearheaded their digital marketing efforts across various social media platforms, including Instagram, Facebook, and LinkedIn. I conceptualized and brought to life a landing page that harmonized with AM Servicios' brand identity. This web presence serves as a virtual gateway to their services, leaving a lasting impression on visitors.",
     image: amserviciosImage,
-    link: "https://vibecommerce.vercel.app/",
+    link: "https://amservicios.com.ar",
   },
   {
     title: "Nephilim Official Page",
