@@ -9,6 +9,7 @@ import vue from "./../assets/vue.webp"
 import nest from "./../assets/nest.webp"
 import sqlite from "./../assets/sqlite.webp"
 import mondongo from "./../assets/mongodb.webp"
+import cosaHorrible from "./../assets/figma.webp"
 
 import { StaticImageData } from "next/image"
 
@@ -63,4 +64,8 @@ export const technologies: Technology[] = [
         image: mondongo
     },
 
+    {
+        name: "Figma",
+        image: cosaHorrible
+    }
 ]
