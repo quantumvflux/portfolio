@@ -1,7 +1,4 @@
 import Image, { StaticImageData } from "next/image";
-import githubIcon from "./assets/github.png";
-import linkIcon from "./assets/link.png";
-import Link from "next/link";
 import LinksSection from "./LinksSection";
 import { Project } from "@/app/data/data";
 

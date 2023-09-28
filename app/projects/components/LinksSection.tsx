@@ -4,7 +4,7 @@ import githubIcon from "./assets/github.png";
 import linkIcon from "./assets/link.png";
 
 interface Props {
-  github: string;
+  github?: string;
   link: string;
 }
 
@@ -14,9 +14,11 @@ const LinksSection = ({ github, link }: Props) => {
       <Link href={link} target="_blank">
         <Image src={linkIcon} alt="Project Link" />
       </Link>
-      <Link href={github} target="_blank">
-        <Image src={githubIcon} alt="Github Link" />
-      </Link>
+      {github && (
+        <Link href={github} target="_blank">
+          <Image src={githubIcon} alt="Github Link" />
+        </Link>
+      )}
     </div>
   );
 };
