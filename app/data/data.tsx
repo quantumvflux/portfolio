@@ -15,7 +15,7 @@ export interface Project {
 
 export interface Job extends Omit<Project, "githubLink"> {}
 
-export const job: Job[] = [
+export const jobs: Job[] = [
   {
     title: "AM Servicios",
     description:
@@ -33,7 +33,7 @@ export const job: Job[] = [
   },
 ];
 
-export const data: Project[] = [
+export const projects: Project[] = [
   {
     title: "VibeCommerce",
     description:
