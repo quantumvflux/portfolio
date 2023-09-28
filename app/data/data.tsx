@@ -3,6 +3,7 @@ import vibecommerceImage from "./assets/vibecommerce.webp";
 import nephilimImage from "./assets/nephilim.webp";
 import cryptoinsightImage from "./assets/cryptoinsight.webp";
 import weatherappImage from "./assets/weatherapp.webp";
+import amservicios from "./assets/amservicios.webp";
 
 export interface Project {
   title: string;
@@ -11,6 +12,25 @@ export interface Project {
   link: string;
   githubLink: string;
 }
+
+export interface Job extends Omit<Project, "githubLink"> {}
+
+export const job: Job[] = [
+  {
+    title: "AM Servicios",
+    description:
+      "Designed and developed a captivating landing page for AM Servicios that perfectly encapsulates the essence of their brand. Additionally, I spearheaded their digital marketing efforts across various social media platforms, including Instagram, Facebook, and LinkedIn. I conceptualized and brought to life a landing page that harmonized with AM Servicios' brand identity. This web presence serves as a virtual gateway to their services, leaving a lasting impression on visitors.",
+    image: amservicios,
+    link: "https://vibecommerce.vercel.app/",
+  },
+  {
+    title: "Nephilim Official Page",
+    description:
+      "Explore the electrifying world of Nephilim, your local music sensation. Dive into their music, events, and exclusive content, all in one place. Stay up-to-date with Nephilim's latest music releases, concert dates, and behind-the-scenes insights, all delivered in real-time. Also discover and shop for unique band merchandise through our integrated store. Show your love for Nephilim with the latest gear.",
+    image: nephilimImage,
+    link: "https://quantumvflux.github.io/nephilim-official-page/",
+  },
+];
 
 export const data: Project[] = [
   {
@@ -21,14 +41,7 @@ export const data: Project[] = [
     link: "https://vibecommerce.vercel.app/",
     githubLink: "https://github.com/quantumvflux/ecommerce",
   },
-  {
-    title: "Nephilim Official Page",
-    description:
-      "Explore the electrifying world of Nephilim, your local music sensation. Dive into their music, events, and exclusive content, all in one place. Stay up-to-date with Nephilim's latest music releases, concert dates, and behind-the-scenes insights, all delivered in real-time. Also discover and shop for unique band merchandise through our integrated store. Show your love for Nephilim with the latest gear.",
-    image: nephilimImage,
-    link: "https://quantumvflux.github.io/nephilim-official-page/",
-    githubLink: "https://github.com/quantumvflux/nephilim-official-page",
-  },
+
   {
     title: "CryptoInsight",
     description:
